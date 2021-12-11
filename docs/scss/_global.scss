@@ -62,20 +62,51 @@ body{
 }
 
 body{
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
+  @extend %raleway-300;
+  color: $text;
   display: flex;
   letter-spacing: 0.2px;
   flex-direction: column;
 }
 
 .container{
-  max-width: 1075px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .main{
   flex-grow: 1;
-  background: #FAFAFA;
+}
+
+
+.menu{
+    &__list{
+        display: flex;
+    }
+    &__item{
+        margin-left: 22px;
+        padding: 0 15px 40px;
+        border-bottom: 4px solid transparent;
+        transition: all .3s;
+        &:hover{
+            border-bottom: 4px solid #00e1ff;
+            .menu__link{
+                color: #00e1ff;
+            }
+        }
+    }
+    &__link{
+        color: $default;
+        text-transform: uppercase;
+    }
+}
+
+.menu__item--active{
+    border-bottom: 4px solid #00e1ff;
+    .menu__link{
+        color: #00e1ff;
+    }
 }
