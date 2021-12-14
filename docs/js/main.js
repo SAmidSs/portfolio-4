@@ -7,4 +7,16 @@ $(function () {
         $('.tour-tabs__content-item').removeClass('tour-tabs__content-item--active');
         $($(this).attr('href')).addClass('tour-tabs__content-item--active');
     });
+
+
+    var mixer = mixitup('.portfolio__content', {
+        animation: {
+            "duration": 250,
+            "nudge": true,
+            "reverseOut": true,
+            "effects": "fade translateZ(-100px)"
+        }
+    });
+    // var mixer = mixitup(containerEl, {
+    // });
 })
