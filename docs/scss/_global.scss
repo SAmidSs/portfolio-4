@@ -119,7 +119,7 @@ body{
   padding-bottom: 25px;
   color: $accent;
   line-height: 30px;
-  @extend %raleway-300;
+  @extend %raleway-500;
   position: relative;
   &::after{
       content: '';

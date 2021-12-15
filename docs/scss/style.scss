@@ -457,6 +457,222 @@
 
 
 
+.video-info{
+    background-color: #252726;
+    padding: 190px 0 150px;
+    &__box{
+        margin-bottom: 60px;
+    }
+}
+
+.video{
+    &__title{
+        margin-bottom: 15px;
+        display: block;
+        text-align: center;
+        @extend %raleway-500;
+        color: $accent;
+    }
+    &__btn{
+        width: 100%;
+        text-align: center;
+    }
+    &__btn-open{
+        margin: 0 auto;
+        display: inline-block;
+    }
+}
+
+
+
+
+.statistic{
+    background-color: #131316;
+    padding: 75px 0;
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        max-width: 190px;
+    }
+    &__item-img{
+        width: 65px;
+        height: 60px;
+        margin: 0 auto 40px;
+        img{
+            margin: 0 auto;
+        }
+    }
+    &__item-num{
+        font-size: 40px;
+        line-height: 30px;
+        color: $accent;
+        margin-bottom: 20px;
+        @extend %raleway-300;
+        text-align: center;
+    }
+    &__item-text{
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        color: $accent;
+        @extend %raleway-500;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.about{
+    padding: 95px 0 90px;
+    &__box{
+        margin-bottom: 85px;
+    }
+    &__title{
+        color: $default;
+
+    }
+    &__subtitle{
+        color: $default;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        width: 270px;
+        background-color: #f7f7f7;
+        & + .about__item{
+            margin-left: 30px;
+        }
+    }
+    &__img{
+        height: 200px;
+        width: 100%;
+        position: relative;
+        background-color: #252726;
+    }
+    &__item-box{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        background-color: #1c1d1e;
+    }
+    &__author{
+        margin-bottom: 10px;
+        color: #00e1ff;
+        font-size: 20px;
+        @extend %raleway-500;
+    }
+    &__position{
+        @extend %raleway-500;
+        font-size: 13px;
+        color: $accent;
+    }
+    &__info{
+        padding: 30px 25px 25px;
+        text-align: center;
+    }
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social-link{
+        width: 65px;
+        height: 56px;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            svg{
+                path{
+                    fill: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+    &__social-link--facebook,
+    &__social-link--twitter,
+    &__social-link--gogle,
+    &__social-link--browser{
+        transition: all .3s;
+    }
+    &__social-link--facebook{
+        &:hover{
+            background-color: #36609e;
+        }
+    }
+    &__social-link--twitter{
+        &:hover{
+            background-color: #2ca9e1;
+        }
+    }
+    &__social-link--gogle{
+        &:hover{
+            background-color: #db5442;
+        }
+    }
+    &__social-link--browser{
+        &:hover{
+            background-color: #ee558e;
+        }
+    }
+}
+
+
+
+.about-info{
+    background-color: #f7f7f7;
+    padding: 85px 0 90px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img{
+        height: 300px;
+        width: 570px;
+        background-color: #252726;
+        img{
+            height: 300px;
+            width: 100%;
+        }
+    }
+    &__content{
+        height: 300px;
+        max-width: 570px;
+        padding: 30px 20px;
+        border: 1px solid #c8cdce;
+    }
+    &__title{
+        margin-bottom: 35px;
+        font-size: 20px;
+        color: $default;
+        @extend %raleway-500;
+    }
+    &__text{
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+}
+
+
+
+
+
+
+
 
 
 
