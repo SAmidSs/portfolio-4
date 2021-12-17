@@ -667,14 +667,175 @@
     }
 }
 
+.quote{
+    padding: 95px 0 175px;
+    background-color: #252726;
+    &__items{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    &__img{
+        margin-bottom: 15px;
+    }
+    &__title{
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: $accent;
+        @extend %raleway-500;
+    }
+    &__author{
+        font-size: 13px;
+        color: $accent;
+        @extend %raleway-300;
+    }
+}
 
 
+.news{
+    padding: 85px 0;
+    &__box{
+        margin-bottom: 100px;
+    }
+    &__title{
+        color: $default;
+    }
+    &__subtitle{
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item-box{
+        margin-right: 30px;
+    }
+    &__num{
+        font-size: 67px;
+        line-height: 60px;
+        color: #00e1ff;
+        margin-bottom: 5px;
+        text-align: center;
+        @extend %raleway-300;
+    }
+    &__date{
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        color: #929ba0;
+    }
+    &__item-content{
+        max-width: 683px;
+        padding: 15px 0;
+        border-bottom: 1px solid #edf2f6;
+    }
+    &__item-text{
+        font-size: 13px;
+        padding-top: 60px;
+        color: $text;
+        margin-bottom: 30px;
+    }
+    &__item-btn{
+        display: block;
+        text-align: right;
+    }
+    &__item-link{
+        font-size: 13px;
+        color: #00e1ff;
+        display: inline-block;
+        
+    }
+}
 
 
+.modern-design{
+    padding: 135px 0 130px;
+    background-color: #252726;
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 746px;
+            height: 391px;
+            top: 0;
+            left: 0;
+            background-image: url(../images/design/technics-bg.png);
+        }
+    }
+    &__img{
+        z-index: 20;
+    }
+    &__content{
+        max-width: 670px;
+
+    }
+    &__title{
+        font-size: 25px;
+        color: $accent;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        @extend %raleway-500;
+        text-transform: uppercase;
+
+    }
+    &__text{
+        font-size: 13px;
+        color: $accent;
+    }
+}
 
 
-
-
+.clients{
+    padding: 90px 0;
+    &__box{
+        margin-bottom: 90px;
+    }
+    &__title{
+        color: $default;
+    }
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item{
+        padding: 40px 35px 50px;
+        border: 1px solid #ccc;
+        display: block;
+        width: 370px;
+    }
+    &__item-name{
+        font-size: 20px;
+        color: $default;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__item-profession{
+        font-size: 13px;
+        color: #00e1ff;
+        margin-bottom: 25px;
+        text-align: center;
+        display: block;
+    }
+    &__item-text{
+        text-align: center;
+        font-size: 13px;
+        @extend %raleway-100;
+        
+    }
+}
 
 
 
