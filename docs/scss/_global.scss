@@ -79,36 +79,43 @@ body{
 
 .main{
   flex-grow: 1;
+  padding-top: 117px;
 }
 
 
 .menu{
-    &__list{
-        display: flex;
-    }
-    &__item{
-        margin-left: 22px;
-        padding: 0 15px 40px;
-        border-bottom: 4px solid transparent;
-        transition: all .3s;
-        &:hover{
-            border-bottom: 4px solid #00e1ff;
-            .menu__link{
-                color: #00e1ff;
-            }
-        }
-    }
-    &__link{
-        color: $default;
-        text-transform: uppercase;
-    }
-}
-
-.menu__item--active{
-    border-bottom: 4px solid #00e1ff;
-    .menu__link{
+  &__btn{
+    display: none;
+  }
+  &__list{
+    display: flex;
+  }
+  &__link{
+    margin-left: 22px;
+    padding: 0 15px 40px;
+    border-bottom: 4px solid transparent;
+    transition: all .3s;
+    color: $default;
+    text-transform: uppercase;
+    &:hover{
+        border-bottom: 4px solid #00e1ff;
         color: #00e1ff;
     }
+  }
+}
+
+
+
+.menu__link--active{
+  border-bottom: 4px solid #00e1ff;
+  color: #00e1ff;
+}
+
+
+.menu-open{
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 

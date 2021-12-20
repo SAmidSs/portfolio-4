@@ -6,6 +6,12 @@
 
 
 .header{
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+    padding-bottom: 50px;
     &__box{
         padding-top: 40px;
         display: flex;
@@ -13,7 +19,7 @@
         align-items: center;
     }
     &__logo{
-        padding-bottom: 44px;
+        z-index: 99;
     }
 }
 
@@ -26,8 +32,9 @@
     flex-direction: column;
     &__title{
         margin-bottom: 30px;
+        text-align: center;
         font-size: 60px;
-        line-height: 50px;
+        line-height: 60px;
         color: $accent;
         @extend %raleway-200;
     }
@@ -49,7 +56,7 @@
 
 
 .services{
-    padding: 135px 0;
+    padding: 150px 0;
     &__items{
         display: flex;
         justify-content: space-between;
@@ -180,7 +187,7 @@
     &__content-text{
         margin-bottom: 30px;
     }
-    &__content-btn{
+    &__content-link{
         padding: 15px 35px;
         border: 1px solid #00e1ff;
         color: #00e1ff;
@@ -192,7 +199,7 @@
 
 .design{
     background-color: #252726;
-    padding-top: 100px;
+    padding-top: 150px;
     overflow: hidden;
     &__inner{
         display: flex;
@@ -212,7 +219,7 @@
 
 
 .timeline{
-    padding: 120px 0 90px;
+    padding: 150px 0 90px;
     &__inner{
         display: flex;
         justify-content: center;
@@ -267,7 +274,7 @@
         position: relative;
         &::after{
             content: '';
-            z-index: 99;
+            z-index: 98;
             position: absolute;
             top: 5px;
             left: -66px;
@@ -291,7 +298,7 @@
 
 .portfolio{
     background-color: #f7f7f7;
-    padding: 85px 0 60px;
+    padding: 150px 0 60px;
     &__box{
         margin-bottom: 75px;
     }
@@ -502,7 +509,7 @@
 
 .statistic{
     background-color: #131316;
-    padding: 75px 0;
+    padding: 150px 0;
     &__items{
         display: flex;
         justify-content: space-between;
@@ -540,7 +547,7 @@
 
 
 .about{
-    padding: 95px 0 90px;
+    padding: 150px 0 90px;
     &__box{
         margin-bottom: 85px;
     }
@@ -648,7 +655,7 @@
 
 .about-info{
     background-color: #f7f7f7;
-    padding: 85px 0 90px;
+    padding: 150px 0 90px;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -682,7 +689,7 @@
 }
 
 .quote{
-    padding: 95px 0 175px;
+    padding: 150px 0 175px;
     background-color: #252726;
     position: relative;
     &__items{
@@ -717,7 +724,7 @@
     }
     .slick-arrow{
         position: absolute;
-        z-index: 99;
+        z-index: 98;
         bottom: -54px;
         border: none;
         font-size: 0;
@@ -740,7 +747,7 @@
 
 
 .news{
-    padding: 85px 0;
+    padding: 150px 0;
     &__box{
         margin-bottom: 100px;
     }
@@ -798,7 +805,7 @@
 
 
 .modern-design{
-    padding: 135px 0 130px;
+    padding: 150px 0 130px;
     background-color: #252726;
     &__inner{
         display: flex;
@@ -839,7 +846,7 @@
 
 
 .clients{
-    padding: 90px 0;
+    padding: 150px 0;
     &__box{
         margin-bottom: 90px;
     }
@@ -880,7 +887,7 @@
 
 
 .subbscribe{
-    padding: 85px 0 90px;
+    padding: 90px 0 90px;
     background-color: #252726;
     &__inner{
         max-width: 500px;
@@ -914,7 +921,7 @@
 
 
 .contacts{
-    padding: 80px 0 90px;
+    padding: 150px 0 90px;
     background-color: #131316;
     &__box{
         margin-bottom: 80px;

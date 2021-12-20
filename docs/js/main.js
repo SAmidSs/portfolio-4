@@ -1,4 +1,26 @@
 $(function () {
+    $(function () {
+        $('.menu__btn').on('click', function () {
+            $('.menu__list').toggleClass('menu__list--active');
+            $('.menu__btn').toggleClass('menu__btn--active');
+            $('body').toggleClass('menu-open');
+            $('header').toggleClass('header__menu');  
+        });
+    })
+
+
+    $("#menu").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 900);
+        $('.menu__link').removeClass('menu__link--active');
+        $(this).addClass('menu__link--active');
+    });
+
+
+
+
     $('.portfolio__content').slick({
         dots: false,
         arrows: false,
