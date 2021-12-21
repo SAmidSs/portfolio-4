@@ -228,11 +228,16 @@
 .timeline-benefits{
     max-width: 200px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     &__item{
         margin-bottom: 225px;
     }
     &__item-title{
         color: #00e1ff;
+        text-align: right;
         font-size: 17px;
         @extend %raleway-300;
         margin-bottom: 10px;
@@ -695,6 +700,8 @@
     &__items{
         display: flex;
         align-items: center;
+        max-width: 500px;
+        margin: 0 auto;
     }
     &__item{
         display: flex;
@@ -735,12 +742,12 @@
         cursor: pointer;
     }
     .slick-next{
-        right: 530px;
+        left: 290px;
         
         
     }
     .slick-prev{
-        left: 530px;
+        right: 290px;
         
     }
 }

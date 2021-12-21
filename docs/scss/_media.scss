@@ -1,3 +1,40 @@
+@media(max-width: 1200px){
+    .about{
+        &__items{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item{
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    .about-info{
+        &__inner{
+            flex-direction: column;
+        }
+        &__img{
+            width: 100%;
+        }
+        &__content{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .modern-design{
+        &__inner{
+            &::after{
+                height: 250px;
+            }
+        }
+        &__title{
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+}
 @media(max-width: 1030px){
     .services{
         &__items{
@@ -28,7 +65,24 @@
             margin: 0 auto;
         }
     }
-
+    .modern-design{
+        &__img{
+            display: none;
+        }
+        &__content{
+            max-width: 100%;
+        }
+    }
+    .clients{
+        &__items{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item{
+            margin-bottom: 20px;
+        }
+    }
 }
 @media(max-width: 940px){
     .header__menu{
@@ -88,7 +142,7 @@
             height: 22px;
             transition: all .3s;
             span{
-            display: none;
+                display: none;
             }
             &::after,
             &::before{
@@ -143,6 +197,44 @@
         }
     }
 }
+@media(max-width: 820px){
+    .statistic{
+        &__items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        &__item{
+            margin: 20px 15px
+        }
+    }
+    .modern-design{
+        &__inner{
+            &::after{
+                display: none;
+            }
+        }
+        &__title{
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+    .contacts{
+        &__label{
+            flex-direction: column;
+        }
+        &__input-box{
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        &__input{
+            display: block;
+            width: 100%;
+        }
+    }
+}
 
 @media(max-width: 580px){
     .tour-tabs{
@@ -154,6 +246,29 @@
         &__top-item{
             width: 100%;
             margin-bottom: 30px;
+        }
+    }
+    .portfolio{
+        &__top-filter{
+            flex-wrap: wrap;
+        }
+
+    }
+    .clients{
+        &__item{
+            width: 100%;
+        }
+    }
+}
+@media(max-width: 530px){
+    .slider{
+        &__item{
+            margin-left: 0px;
+        }
+    }
+    .about-info{
+        &__content{
+            height: auto;
         }
     }
 }
@@ -171,6 +286,16 @@
         }
         
     }
+    .timeline-content{
+        &__item-title{
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+        &__item-text{
+            font-size: 11px;
+            margin-bottom: 14px;
+        }
+    }
 }
 
 @media(max-width: 450px){
@@ -178,6 +303,51 @@
         &__adress{
             width: 100%;
         }
+    }
+    .timeline-content{
+        &__item{
+            margin-left: 33px;
+            &::before{
+                left: -15px;
+            }
+        }
+    }
+    .timeline-content{
+        &__item-title{
+            &::after{
+             left: -20px;   
+            }
+        } 
+    }
+    .timeline-benefits{
+        &__item{
+            margin-bottom: 133px;
+        }
+    }
+    .quote{
+        .slick-next{
+            left: 240px;
+            
+            
+        }
+        .slick-prev{
+            right: 240px;
+            
+        }
+    }
+    .modern-design{
+        &__text{
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 395px){
+    .timeline-benefits{
+        &__item {
+            margin-bottom: 200px;
+        }
+    
     }
 }
 
@@ -201,4 +371,14 @@
         }
         
     } 
+    
+}
+
+@media(max-width: 320px){
+    .timeline-benefits{
+        &__item {
+            margin-bottom: 300px;
+        }
+    
+    }
 }
