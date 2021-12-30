@@ -44,6 +44,7 @@ function scripts() {
         'node_modules/mixitup/dist/mixitup.js',
         'node_modules/fullpage.js/dist/fullpage.js',
         'node_modules/fullpage.js/vendors/scrolloverflow.js',
+        'node_modules/wow.js/dist/wow.js',
         // 'node_modules/swiper/swiper-bundle.js',
         'docs/js/main.js'
     ])
